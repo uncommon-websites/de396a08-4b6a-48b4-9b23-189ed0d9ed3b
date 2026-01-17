@@ -4,7 +4,7 @@
   export let description: string;
 </script>
 
-<section class="py-24 px-4 max-w-5xl mx-auto">
+<section class="py-24 px-4 max-w-5xl mx-auto" id={$props.id}>
   <div class="mb-8 text-left">
     <div class="text-[10px] font-bold tracking-[0.2em] text-gray-500 uppercase mb-2">{label}</div>
     <h2 class="text-xl md:text-2xl text-gray-500 leading-relaxed max-w-2xl">
