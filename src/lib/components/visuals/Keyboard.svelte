@@ -1,5 +1,8 @@
 <script lang="ts">
-    export let highlight = '';
+    type Props = {
+        highlight?: string;
+    };
+    let { highlight = '' }: Props = $props();
 </script>
 
 <div class="grid gap-1.5 p-6 bg-[#111] rounded-xl border border-white/5 shadow-2xl">

@@ -1,5 +1,8 @@
 <script lang="ts">
-  export let transparent = false;
+  type Props = {
+    transparent?: boolean;
+  };
+  let { transparent = false }: Props = $props();
 </script>
 
 <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-6 transition-colors duration-300 {transparent ? 'bg-transparent' : 'bg-ghoste-bg/80 backdrop-blur-md'}">
